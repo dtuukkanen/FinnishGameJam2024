@@ -1,10 +1,11 @@
 extends Node2D
 
-var matrix_size = 5  # Your desired matrix size
+var matrix_size_x = 5  # Your desired matrix size x
+var matrix_size_y = 8 # Your desired matrix size x
 
 func _ready():
-	for i in range(matrix_size):
-		for j in range(matrix_size):
+	for i in range(matrix_size_x):
+		for j in range(matrix_size_y):
 			var chair = Sprite2D.new()
 			chair.texture = preload("res://Assets/chair.png")
 			var width = chair.texture.get_width()
