@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://c8g06xf7pskkg"]
+[gd_scene load_steps=4 format=3 uid="uid://c8g06xf7pskkg"]
+
+[ext_resource type="Texture2D" uid="uid://dvjjbpmnh1asn" path="res://Assets/student.png" id="1_5xwvy"]
+[ext_resource type="Script" path="res://node_2d.gd" id="1_k00io"]
+[ext_resource type="Script" path="res://Student.gd" id="2_wgeru"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Student" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_5xwvy")
+centered = false
+script = ExtResource("2_wgeru")
+
+[node name="Chairs" type="Sprite2D" parent="."]
+centered = false
+script = ExtResource("1_k00io")
