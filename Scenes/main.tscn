@@ -2,17 +2,18 @@
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_sefxg"]
 [ext_resource type="Texture2D" uid="uid://d0mrfc0bqquwo" path="res://Assets/Oppilas8bit.png" id="2_04bxf"]
-[ext_resource type="Texture2D" uid="uid://u4vd0vf000py" path="res://Assets/Uolevi.png" id="2_uxut0"]
 [ext_resource type="Script" path="res://Student.gd" id="3_wwkpn"]
 [ext_resource type="Script" path="res://Uolevi.gd" id="4_n5g76"]
 [ext_resource type="Texture2D" uid="uid://cyeo4acu08ntp" path="res://Assets/Book.png" id="5_exjnl"]
+[ext_resource type="Texture2D" uid="uid://g6k6tdbtygxf" path="res://Assets/UoleviHead.png" id="7_accbg"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(2.08165e-12, 32)
+position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_sefxg")
 
 [node name="Student" type="Sprite2D" parent="."]
 z_index = 1
+position = Vector2(2.08165e-12, 2.08165e-12)
 texture = ExtResource("2_04bxf")
 centered = false
 script = ExtResource("3_wwkpn")
@@ -21,12 +22,12 @@ script = ExtResource("3_wwkpn")
 centered = false
 
 [node name="Uolevi" type="Sprite2D" parent="."]
-position = Vector2(2.08165e-12, -32)
-texture = ExtResource("2_uxut0")
+position = Vector2(192, 256)
+texture = ExtResource("7_accbg")
 centered = false
 script = ExtResource("4_n5g76")
 
 [node name="Book" type="Sprite2D" parent="."]
-position = Vector2(25, -13)
-scale = Vector2(0.25, 0.25)
+position = Vector2(246, 270)
+scale = Vector2(1.09375, 1.09375)
 texture = ExtResource("5_exjnl")

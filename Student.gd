@@ -45,5 +45,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	take_damage(1)
+	#take_damage(1)
 	pass

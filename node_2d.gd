@@ -1,6 +1,6 @@
 extends Node2D
 
-var matrix_size_x = 5  # Your desired matrix size x
+var matrix_size_x = 12  # Your desired matrix size x
 var matrix_size_y = 8 # Your desired matrix size x
 
 func _ready():
