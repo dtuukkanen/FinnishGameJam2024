@@ -27,10 +27,23 @@ func _input(event):
 	# Update position
 	position = new_position
 
+var health = 100
+
+func take_damage(amount_of_damage):
+	health -= amount_of_damage
+
+	if health <= 0:
+		# Player is dead
+		get_tree().change_scene_to_file("res://scenes/GameOver.tscn")
+
+func set_health(new_health):
+	health = new_health
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	set_health(100)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	take_damage(1)
 	pass

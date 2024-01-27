@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8g06xf7pskkg"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_sefxg"]
+[ext_resource type="Texture2D" uid="uid://u4vd0vf000py" path="res://Assets/Uolevi.png" id="2_uxut0"]
+[ext_resource type="Script" path="res://Student.gd" id="3_wwkpn"]
+[ext_resource type="Script" path="res://Uolevi.gd" id="4_n5g76"]
+[ext_resource type="Texture2D" uid="uid://cyeo4acu08ntp" path="res://Assets/Book.png" id="5_exjnl"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(2.08165e-12, 32)
+script = ExtResource("1_sefxg")
+
+[node name="Student" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2_uxut0")
+centered = false
+script = ExtResource("3_wwkpn")
+
+[node name="Chairs" type="Sprite2D" parent="."]
+centered = false
+
+[node name="Uolevi" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, -32)
+texture = ExtResource("2_uxut0")
+centered = false
+script = ExtResource("4_n5g76")
+
+[node name="Book" type="Sprite2D" parent="."]
+position = Vector2(25, -13)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_exjnl")
